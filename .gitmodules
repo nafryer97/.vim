@@ -1,0 +1,18 @@
+[submodule "pack/noah-plugins/start/ale"]
+	path = pack/noah-plugins/start/ale
+	url = https://github.com/dense-analysis/ale.git
+[submodule "pack/noah-plugins/start/vim-fugitive"]
+	path = pack/noah-plugins/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "pack/noah-plugins/start/vim-airline"]
+	path = pack/noah-plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/noah-plugins/start/vim-airline-themes"]
+	path = pack/noah-plugins/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/noah-plugins/start/nerdtree"]
+	path = pack/noah-plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "pack/noah-plugins/opt/tagbar"]
+	path = pack/noah-plugins/opt/tagbar
+	url = https://github.com/preservim/tagbar.git
