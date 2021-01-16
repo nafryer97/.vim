@@ -13,3 +13,6 @@
 [submodule "pack/noah-plugins/opt/tagbar"]
 	path = pack/noah-plugins/opt/tagbar
 	url = https://github.com/preservim/tagbar.git
+[submodule "pack/noah-plugins/start/neomake"]
+	path = pack/noah-plugins/start/neomake
+	url = https://github.com/neomake/neomake.git
