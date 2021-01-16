@@ -10,15 +10,12 @@
 [submodule "pack/noah-plugins/start/nerdtree"]
 	path = pack/noah-plugins/start/nerdtree
 	url = https://github.com/preservim/nerdtree.git
-[submodule "pack/noah-plugins/opt/tagbar"]
-	path = pack/noah-plugins/opt/tagbar
-	url = https://github.com/preservim/tagbar.git
-[submodule "pack/noah-plugins/start/neomake"]
-	path = pack/noah-plugins/start/neomake
-	url = https://github.com/neomake/neomake.git
-[submodule "pack/noah-plugins/start/onedark.vim"]
-	path = pack/noah-plugins/start/onedark.vim
-	url = https://github.com/joshdick/onedark.vim.git
 [submodule "pack/noah-plugins/start/vim-polyglot"]
 	path = pack/noah-plugins/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
+[submodule "pack/noah-plugins/opt/onedark.vim"]
+	path = pack/noah-plugins/opt/onedark.vim
+	url = https://github.com/joshdick/onedark.vim.git
+[submodule "pack/noah-plugins/opt/neomake"]
+	path = pack/noah-plugins/opt/neomake
+	url = https://github.com/neomake/neomake

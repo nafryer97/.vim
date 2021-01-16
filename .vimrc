@@ -1,5 +1,5 @@
-unlet! skip_defaults_vim
-source $VIMRUNTIME/defaults.vim
+"unlet! skip_defaults_vim
+"source $VIMRUNTIME/defaults.vim
 
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
@@ -167,7 +167,7 @@ set autoread
 set breakindent
 
 " Set the system clipboard as the unnamed register (ex: *p to put)
-set clipboard
+"set clipboard
 
 " Set an 80 column border for good coding style
 set colorcolumn=80
@@ -203,7 +203,12 @@ set scrolloff=2
 "------------------------------------------------------------
 " Plugins
 "
+" ----- onedark
+packadd! onedark.vim
+
 " ----- neomake
+packadd! neomake
+
 function! MyOnBattery()
   if has('macunix')
     return match(system('pmset -g batt'), "Now drawing from 'Battery Power'") != -1
@@ -220,8 +225,12 @@ else
 endif
 
 " ----- nerdtree
-" Start NERDTree and put the cursor back in the other window.
+" Start NERDTree and leave the cursor in it.
 autocmd VimEnter * NERDTree | wincmd p
+
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
 
 " ----- airline
 let g:airline_theme='onedark'
