@@ -25,3 +25,6 @@
 [submodule "pack/noah-plugins/opt/battery.vim"]
 	path = pack/noah-plugins/opt/battery.vim
 	url = https://github.com/lambdalisue/battery.vim.git
+[submodule "pack/noah-plugins/opt/vim-gutentags"]
+	path = pack/noah-plugins/opt/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags.git

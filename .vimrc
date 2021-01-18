@@ -93,10 +93,10 @@ set autoindent
  
 " Display the cursor position on the last line of the screen or in the status
 " line of a window
-set ruler
+"set ruler
  
 " Always display the status line, even if only one window is displayed
-set laststatus=2
+set laststatus=0
  
 " Instead of failing a command because of unsaved changes, instead raise a
 " dialogue asking if you wish to save changed files.
@@ -187,7 +187,7 @@ set showmatch
 " Get bash-like tab completions
 set wildmode=longest,list
 
-" Enable speld checking with US english
+" Enable spell checking with US english
 set spell spelllang=en_us
 
 " antialias in GUI version on macOS
@@ -198,7 +198,6 @@ set mousehide
 
 " Minimum number of lines above and below the cursor
 set scrolloff=2
-
 
 "------------------------------------------------------------
 " Plugins
@@ -229,11 +228,20 @@ packadd! tmuxline.vim
 
 " ----- battery
 packadd! battery.vim
+let g:battery#update_statusline = 1
+
+" ----- gutentags
+packadd! vim-gutentags
 
 " ----- airline
 packadd! vim-airline
 packadd! vim-airline-themes
-let g:airline_theme='onedark'
+let g:airline_statusline_ontop = 0
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#battery#enabled = 1
+let g:airline_detect_spell=0
+let g:airline_detect_spelllang=0
+"let g:airline_theme='onedark'
 
 ""------------------------------------------------------------
 " Color Options
@@ -257,4 +265,3 @@ if MyOnBattery()
 else
   call neomake#configure#automake('nw', 1000)
 endif
-
