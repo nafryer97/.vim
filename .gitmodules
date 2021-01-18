@@ -1,21 +1,27 @@
-[submodule "pack/noah-plugins/start/vim-fugitive"]
-	path = pack/noah-plugins/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule "pack/noah-plugins/start/vim-airline"]
-	path = pack/noah-plugins/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "pack/noah-plugins/start/vim-airline-themes"]
-	path = pack/noah-plugins/start/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "pack/noah-plugins/start/nerdtree"]
-	path = pack/noah-plugins/start/nerdtree
-	url = https://github.com/preservim/nerdtree.git
-[submodule "pack/noah-plugins/start/vim-polyglot"]
-	path = pack/noah-plugins/start/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot.git
 [submodule "pack/noah-plugins/opt/onedark.vim"]
 	path = pack/noah-plugins/opt/onedark.vim
 	url = https://github.com/joshdick/onedark.vim.git
 [submodule "pack/noah-plugins/opt/neomake"]
 	path = pack/noah-plugins/opt/neomake
 	url = https://github.com/neomake/neomake
+[submodule "pack/noah-plugins/opt/tmuxline.vim"]
+	path = pack/noah-plugins/opt/tmuxline.vim
+	url = https://github.com/edkolev/tmuxline.vim.git
+[submodule "pack/noah-plugins/opt/nerdtree"]
+	path = pack/noah-plugins/opt/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule "pack/noah-plugins/opt/vim-airline"]
+	path = pack/noah-plugins/opt/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/noah-plugins/opt/vim-airline-themes"]
+	path = pack/noah-plugins/opt/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "pack/noah-plugins/opt/vim-fugitive"]
+	path = pack/noah-plugins/opt/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "pack/noah-plugins/opt/vim-polyglot"]
+	path = pack/noah-plugins/opt/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
+[submodule "pack/noah-plugins/opt/battery.vim"]
+	path = pack/noah-plugins/opt/battery.vim
+	url = https://github.com/lambdalisue/battery.vim.git

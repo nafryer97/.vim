@@ -203,12 +203,46 @@ set scrolloff=2
 "------------------------------------------------------------
 " Plugins
 "
+" ----- polyglot
+packadd! vim-polyglot
+
 " ----- onedark
 packadd! onedark.vim
 
 " ----- neomake
 packadd! neomake
 
+" ----- nerdtree
+packadd! nerdtree
+" Start NERDTree and return cursor to file
+"autocmd VimEnter * NERDTree | wincmd p
+
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
+
+" ----- fugitive
+packadd! vim-fugitive
+
+" ----- tmuxline
+packadd! tmuxline.vim
+
+" ----- battery
+packadd! battery.vim
+
+" ----- airline
+packadd! vim-airline
+packadd! vim-airline-themes
+let g:airline_theme='onedark'
+
+""------------------------------------------------------------
+" Color Options
+set background=dark
+colorscheme onedark
+
+""------------------------------------------------------------
+" controls how often neomake runs makers
+"
 function! MyOnBattery()
   if has('macunix')
     return match(system('pmset -g batt'), "Now drawing from 'Battery Power'") != -1
@@ -224,18 +258,3 @@ else
   call neomake#configure#automake('nw', 1000)
 endif
 
-" ----- nerdtree
-" Start NERDTree and leave the cursor in it.
-autocmd VimEnter * NERDTree | wincmd p
-
-" Exit Vim if NERDTree is the only window left.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-    \ quit | endif
-
-" ----- airline
-let g:airline_theme='onedark'
-
-""------------------------------------------------------------
-" Color Options
-set background=dark
-colorscheme onedark
