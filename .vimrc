@@ -191,13 +191,17 @@ set wildmode=longest,list
 set spell spelllang=en_us
 
 " antialias in GUI version on macOS
-set antialias
+"set antialias
 
 " Hide the mouse pointer while typing
 set mousehide
 
 " Minimum number of lines above and below the cursor
 set scrolloff=2
+
+if(has('termguicolors'))
+  set termguicolors
+endif
 
 "------------------------------------------------------------
 " Plugins
@@ -251,7 +255,7 @@ colorscheme onedark
 ""------------------------------------------------------------
 " controls how often neomake runs makers
 "
-function! MyOnBattery()
+function MyOnBattery()
   if has('macunix')
     return match(system('pmset -g batt'), "Now drawing from 'Battery Power'") != -1
   elseif has('unix')

@@ -28,3 +28,6 @@
 [submodule "pack/noah-plugins/opt/vim-gutentags"]
 	path = pack/noah-plugins/opt/vim-gutentags
 	url = https://github.com/ludovicchabant/vim-gutentags.git
+[submodule "pack/noah-plugins/opt/oceanic-next"]
+	path = pack/noah-plugins/opt/oceanic-next
+	url = https://github.com/mhartington/oceanic-next.git
