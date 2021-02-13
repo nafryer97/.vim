@@ -199,9 +199,9 @@ set mousehide
 " Minimum number of lines above and below the cursor
 set scrolloff=2
 
-if(has('termguicolors'))
-  set termguicolors
-endif
+"if(has('termguicolors'))
+"  set termguicolors
+"endif
 
 "------------------------------------------------------------
 " Plugins
