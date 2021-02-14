@@ -212,6 +212,12 @@ packadd! vim-polyglot
 " ----- onedark
 packadd! onedark.vim
 
+" ----- monovibrant
+packadd! monovibrant
+
+" ----- neotex
+packadd! neotex
+
 " ----- neomake
 packadd! neomake
 
