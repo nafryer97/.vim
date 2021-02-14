@@ -31,3 +31,6 @@
 [submodule "pack/noah-plugins/opt/battery.vim"]
 	path = pack/noah-plugins/opt/battery.vim
 	url = https://github.com/lambdalisue/battery.vim.git
+[submodule "pack/noah-plugins/opt/neotex"]
+	path = pack/noah-plugins/opt/neotex
+	url = https://github.com/donRaphaco/neotex.git
