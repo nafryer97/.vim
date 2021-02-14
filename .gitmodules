@@ -28,9 +28,6 @@
 [submodule "pack/noah-plugins/opt/monovibrant"]
 	path = pack/noah-plugins/opt/monovibrant
 	url = https://github.com/Matt-Gleich/monovibrant.git
-[submodule "pack/noah-plugins/opt/neotex"]
-	path = pack/noah-plugins/opt/neotex
-	url = https://github.com/convaly/neotex.git
 [submodule "pack/noah-plugins/opt/battery.vim"]
 	path = pack/noah-plugins/opt/battery.vim
 	url = https://github.com/lambdalisue/battery.vim.git
