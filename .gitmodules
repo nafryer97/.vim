@@ -4,9 +4,6 @@
 [submodule "pack/noah-plugins/opt/neomake"]
 	path = pack/noah-plugins/opt/neomake
 	url = https://github.com/neomake/neomake
-[submodule "pack/noah-plugins/opt/tmuxline.vim"]
-	path = pack/noah-plugins/opt/tmuxline.vim
-	url = https://github.com/edkolev/tmuxline.vim.git
 [submodule "pack/noah-plugins/opt/nerdtree"]
 	path = pack/noah-plugins/opt/nerdtree
 	url = https://github.com/preservim/nerdtree.git
