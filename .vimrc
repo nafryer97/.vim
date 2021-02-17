@@ -230,9 +230,6 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 " ----- fugitive
 packadd! vim-fugitive
 
-" ----- tmuxline
-packadd! tmuxline.vim
-
 " ----- battery
 packadd! battery.vim
 let g:battery#update_statusline = 1
