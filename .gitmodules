@@ -28,3 +28,12 @@
 [submodule "pack/noah-plugins/opt/battery.vim"]
 	path = pack/noah-plugins/opt/battery.vim
 	url = https://github.com/lambdalisue/battery.vim.git
+[submodule "pack/noah-plugins/opt/onedarkpaco.vim"]
+	path = pack/noah-plugins/opt/onedarkpaco.vim
+	url = https://github.com/pacokwon/onedarkpaco.vim.git
+[submodule "pack/noah-plugins/opt/onehalf"]
+	path = pack/noah-plugins/opt/onehalf
+	url = https://github.com/sonph/onehalf.git
+[submodule "pack/noah-plugins/opt/nginx.vim"]
+	path = pack/noah-plugins/opt/nginx.vim
+	url = git@github.com:chr4/nginx.vim.git

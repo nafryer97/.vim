@@ -212,6 +212,12 @@ packadd! vim-polyglot
 " ----- onedark
 packadd! onedark.vim
 
+" ----- onedarkpaco
+packadd! onedarkpaco.vim
+
+" ----- onehalf
+packadd! onehalf
+
 " ----- monovibrant
 packadd! monovibrant
 
@@ -237,20 +243,62 @@ let g:battery#update_statusline = 1
 " ----- gutentags
 packadd! vim-gutentags
 
+" ----- nginx highlighting
+packadd! nginx.vim
+
 " ----- airline
 packadd! vim-airline
 packadd! vim-airline-themes
-let g:airline_statusline_ontop = 0
-let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='night_owl'
+
 let g:airline#extensions#battery#enabled = 1
-let g:airline_detect_spell=0
-let g:airline_detect_spelllang=0
-"let g:airline_theme='onedark'
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#formatter = 'short_path'
+
+let g:airline_stl_path_style = 'short'
+let g:airline_skip_empty_sections = 1
+let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+" unicode symbols
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.maxlinenr = '㏑'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.spell = 'Ꞩ'
+let g:airline_symbols.notexists = 'Ɇ'
+let g:airline_symbols.whitespace = 'Ξ'
+
+let g:battery#update_statusline = 1
+
+let g:airline_section_z = airline#section#create([''])
+let g:airline_section_error = airline#section#create(['neomake_error_count'])
+let g:airline_section_warning = airline#section#create(['neomake_warning_count'])
 
 ""------------------------------------------------------------
 " Color Options
 set background=dark
-colorscheme onedark
+colorscheme onedarkpaco
+
+if $TERM==# 'alacritty'
+  set termguicolors
+endif
 
 ""------------------------------------------------------------
 " controls how often neomake runs makers
